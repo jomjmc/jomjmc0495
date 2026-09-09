@@ -1,0 +1,135 @@
+{
+  "masterPasscode": "jomjmc0495",
+  "appName": "UI Studio Builder",
+  "appVersion": "1.0.0",
+  "developer": "jomjmc",
+  "repository": "https://github.com/jomjmc/jomjmc0495",
+  "securityLevel": "HIGH",
+  "sessionTimeout": 1800,
+  "enableAuditLog": true,
+  "enableTwoFactor": false,
+  "maxLoginAttempts": 3,
+  "logRetention": 30,
+  "tools": [
+    {
+      "id": "shadow-army-1",
+      "name": "Shadow Army - Reconnaissance",
+      "description": "Information gathering and system analysis",
+      "active": true,
+      "abilities": ["info-scan", "network-analysis", "threat-detection"],
+      "commands": [
+        {
+          "name": "System Scan",
+          "description": "Full system reconnaissance",
+          "command": "shadow-scan --full",
+          "riskLevel": "HIGH",
+          "requiresConfirm": true
+        },
+        {
+          "name": "Network Analysis",
+          "description": "Analyze network connections and ports",
+          "command": "shadow-network --analyze",
+          "riskLevel": "MEDIUM",
+          "requiresConfirm": true
+        },
+        {
+          "name": "Quick Status",
+          "description": "Quick system status check",
+          "command": "shadow-scan --quick",
+          "riskLevel": "LOW",
+          "requiresConfirm": false
+        }
+      ]
+    },
+    {
+      "id": "shadow-army-2",
+      "name": "Shadow Army - Defense",
+      "description": "Active defense and threat mitigation",
+      "active": true,
+      "abilities": ["threat-blocking", "firewall-mgmt", "attack-prevention"],
+      "commands": [
+        {
+          "name": "Activate Defense",
+          "description": "Activate all defense mechanisms",
+          "command": "shadow-defense --activate",
+          "riskLevel": "HIGH",
+          "requiresConfirm": true
+        },
+        {
+          "name": "Block Threat",
+          "description": "Block detected threats",
+          "command": "shadow-defense --block-threat",
+          "riskLevel": "HIGH",
+          "requiresConfirm": true
+        },
+        {
+          "name": "Defense Status",
+          "description": "Check defense system status",
+          "command": "shadow-defense --status",
+          "riskLevel": "LOW",
+          "requiresConfirm": false
+        }
+      ]
+    },
+    {
+      "id": "anti-hacking",
+      "name": "Anti-Hacking Module",
+      "description": "Detect and prevent unauthorized access attempts",
+      "active": true,
+      "abilities": ["intrusion-detection", "access-control", "audit-logging"],
+      "commands": [
+        {
+          "name": "Enable IDS",
+          "description": "Enable Intrusion Detection System",
+          "command": "antihack-ids --enable",
+          "riskLevel": "MEDIUM",
+          "requiresConfirm": true
+        },
+        {
+          "name": "Check Unauthorized Access",
+          "description": "Scan for unauthorized access attempts",
+          "command": "antihack-scan --unauthorized",
+          "riskLevel": "MEDIUM",
+          "requiresConfirm": true
+        },
+        {
+          "name": "IDS Status",
+          "description": "Show IDS status",
+          "command": "antihack-ids --status",
+          "riskLevel": "LOW",
+          "requiresConfirm": false
+        }
+      ]
+    },
+    {
+      "id": "security-audit",
+      "name": "Security Audit & Logging",
+      "description": "Comprehensive security audit and event logging",
+      "active": true,
+      "abilities": ["event-logging", "audit-trail", "compliance-check"],
+      "commands": [
+        {
+          "name": "Full Audit",
+          "description": "Run comprehensive security audit",
+          "command": "audit-tool --full",
+          "riskLevel": "MEDIUM",
+          "requiresConfirm": true
+        },
+        {
+          "name": "Export Logs",
+          "description": "Export audit logs to file",
+          "command": "audit-tool --export",
+          "riskLevel": "LOW",
+          "requiresConfirm": false
+        },
+        {
+          "name": "Compliance Check",
+          "description": "Check security compliance",
+          "command": "audit-tool --compliance",
+          "riskLevel": "LOW",
+          "requiresConfirm": false
+        }
+      ]
+    }
+  ]
+}
